@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Hookpage from './components/hook_page';
+import UseEffectPage from './components/use_effect_page';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,6 +15,7 @@ root.render(
   <React.StrictMode>
     <App />
     <Hookpage/>
+    <UseEffectPage/>
   </React.StrictMode>
 );
 
