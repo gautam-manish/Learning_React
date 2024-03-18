@@ -4,11 +4,11 @@ function Hookpage() {
     let [count, setCount] = React.useState(0)
     let [check, setCheck] = React.useState("")
     let countRef = React.useRef(0);
-    const handleClick = () =>{
-        setCount(count+1);
-        countRef.current = countRef.current+1;
+    const handleClick = () => {
+        setCount(count + 1);
+        countRef.current = countRef.current + 1;
     }
- 
+
     const incrementCounter = () => {
         setCount(count + 1);
     }
@@ -28,25 +28,25 @@ function Hookpage() {
         }
     }
 
-return (
-    <>
-        <div>
-            <h1>Hook Example</h1>
-            <h3>Use State Hook</h3>
-            <h6>Counter Value: {count}</h6>
-            <h6>Counter Value: {check}</h6>
-            <button onClick={incrementCounter}>Increment</button>
-            <button onClick={resetBtn}>Reset</button>
-            <button onClick={decrementCounter}>Decrement</button>
-            <button onClick={evenOdd}>Check</button>
-            <p>user ref Count: {countRef.current} </p>
-            <h3>Use State Hook</h3>
-            <button onClick={handleClick}>Increment</button>
-            <h3>Use Ref Hook</h3>
+    return (
+        <>
+            <div>
+                <h1>Hook Example</h1>
+                <h3>Use State Hook</h3>
+                <h6>Counter Value: {count}</h6>
+                <h6>Counter Value: {check}</h6>
+                <button onClick={incrementCounter}>Increment</button>
+                <button onClick={resetBtn}>Reset</button>
+                <button onClick={decrementCounter}>Decrement</button>
+                <button onClick={evenOdd}>Check</button>
+                <p>user ref Count: {countRef.current} </p>
+                <h3>Use State Hook</h3>
+                <button onClick={handleClick}>Increment</button>
+                <h3>Use Ref Hook</h3>
 
-        </div>
-    </>
-);
+            </div>
+        </>
+    );
 }
 
 export default Hookpage

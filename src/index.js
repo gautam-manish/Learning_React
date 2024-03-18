@@ -5,6 +5,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Hookpage from './components/hook_page';
 import UseEffectPage from './components/use_effect_page';
+import Counter from './components/counter';
+import ToogleSwitch from './components/toogleSwitch';
+import TextInput from './components/textInput';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,6 +19,9 @@ root.render(
     <App />
     <Hookpage/>
     <UseEffectPage/>
+    <Counter/>
+    <ToogleSwitch/>
+    <TextInput/>
   </React.StrictMode>
 );
 
